@@ -1,0 +1,21 @@
+.moc-list {
+	display: block;
+	list-style: none;
+	.moc-list-item {
+		margin-left: 0 !important;
+		padding-left: 0 !important;
+		.moc-list-btn {
+			display: block;
+			float: none;
+			max-width: 100%;
+			margin: auto;
+			padding: 10px 15px;
+			&.moc-list-btn-file {
+				background-color: $cinza-3;
+			}
+			&.moc-list-btn-url {
+				background-color: $azul-1;
+			}
+		}
+	}
+}

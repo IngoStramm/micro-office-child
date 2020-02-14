@@ -1,0 +1,29 @@
+{
+  "name": "lafpartners",
+  "description": "Tema base para desenvolvimento em WordPress",
+  "version": "1.0.0",
+  "title": "LAF Partners",
+  "homepage": "https://agencialaf.com/",
+  "main": "Gruntfile.js",
+  "devDependencies": {
+    "grunt": "~1.0.1",
+    "load-grunt-tasks": "~3.5.2",
+    "grunt-contrib-watch": "~1.0.0",
+    "grunt-contrib-clean": "~1.0.0",
+    "grunt-contrib-sass": "~1.0.0",
+    "grunt-contrib-jshint": "~1.0.0",
+    "grunt-contrib-uglify": "~2.0.0",
+    "grunt-contrib-imagemin": "~1.0.0",
+    "grunt-text-replace": "~0.4.0",
+    "glob-watcher": "~3.0.0",
+    "minimist": "~1.2.0",
+    "readable-stream": "~2.1.5"
+  },
+  "engines": {
+    "node": ">=0.10.1",
+    "npm": ">=1.1.0"
+  },
+  "dependencies": {
+    "npm": "^6.11.2"
+  }
+}

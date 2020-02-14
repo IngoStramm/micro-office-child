@@ -1,0 +1,85 @@
+@for $i from 0 through 50 {
+
+	$valor: $i * 5;
+
+	.m-t-#{$valor} {
+		margin-top: #{$valor}px;
+	}
+
+	.m-t-#{$valor}-i {
+		margin-top: #{$valor}px !important;
+	}
+
+	.m-r-#{$valor} {
+		margin-right: #{$valor}px;
+	}
+
+	.m-r-#{$valor}-i {
+		margin-right: #{$valor}px !important;
+	}
+
+	.m-b-#{$valor} {
+		margin-bottom: #{$valor}px;
+	}
+
+	.m-b-#{$valor}-i {
+		margin-bottom: #{$valor}px !important;
+	}
+
+	.m-l-#{$valor} {
+		margin-left: #{$valor}px;
+	}
+
+	.m-l-#{$valor}-i {
+		margin-left: #{$valor}px !important;
+	}
+
+	.p-t-#{$valor} {
+		padding-top: #{$valor}px;
+	}
+
+	.p-t-#{$valor}-i {
+		padding-top: #{$valor}px !important;
+	}
+
+	.p-r-#{$valor} {
+		padding-right: #{$valor}px;
+	}
+
+	.p-r-#{$valor}-i {
+		padding-right: #{$valor}px !important;
+	}
+
+	.p-b-#{$valor} {
+		padding-bottom: #{$valor}px;
+	}
+
+	.p-b-#{$valor}-i {
+		padding-bottom: #{$valor}px !important;
+	}
+
+	.p-l-#{$valor} {
+		padding-left: #{$valor}px;
+	}
+
+	.p-l-#{$valor}-i {
+		padding-left: #{$valor}px !important;
+	}
+
+}
+
+.ov-h {
+	overflow: hidden;
+}
+
+.ov-h-i {
+	overflow: hidden !important;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.uppercase-i {
+	text-transform: uppercase !important;
+}
