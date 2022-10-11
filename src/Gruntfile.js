@@ -102,7 +102,26 @@ module.exports = function( grunt ) {
 					dest: '<%= dirs.images %>/'
 				}]
 			}
-		}
+		},
+
+        // zip the theme
+        zip: {
+            dist: {
+                cwd: '../../',
+                src: [
+                    '../**',
+                    '!../src/**',
+                    '!../dist/**',
+                    '!../**.md',
+                    '!../**.txt',
+                    '!<%= dirs.sass %>/**',
+                    '!../**.zip',
+                    '!../info.json',
+                    '<%= dirs.js %>/cf-v3.min.js'
+                ],
+                dest: '../dist/<%= pkg.name %>.zip'
+            }
+        }
 
 	};
 
@@ -126,6 +145,7 @@ module.exports = function( grunt ) {
 	// Compress
 	grunt.registerTask( 'compress', [
 		'default',
+        'optimize',
 		'zip'
 	] );
 
