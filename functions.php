@@ -1,5 +1,12 @@
 <?php
 
+require_once 'plugin-update-checker-4.10/plugin-update-checker.php';
+$updateChecker = Puc_v4_Factory::buildUpdateChecker(
+    'https://raw.githubusercontent.com/IngoStramm/micro-office-child/master/info.json',
+    __FILE__,
+    'micro-office-child'
+);
+
 function moc_debug( $debug ) {
 	echo '<pre>';
 	var_dump( $debug );

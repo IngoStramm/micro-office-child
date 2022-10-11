@@ -1,7 +1,7 @@
 {
   "name": "lafpartners",
   "description": "Tema base para desenvolvimento em WordPress",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "title": "LAF Partners",
   "homepage": "https://agencialaf.com/",
   "main": "Gruntfile.js",
