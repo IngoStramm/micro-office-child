@@ -1,24 +1,5 @@
 {
-    "name": "Micro Office Child",
     "version": "1.0.2",
-    "download_url": "https://github.com/IngoStramm/micro-office-child/raw/main/dist/micro-office-child.zip",
-    "homepage": "https://agencialaf.com",
-    "requires": "4.7",
-    "tested": "5.5",
-    "last_updated": "2020-09-01 15:30:00",
-    "upgrade_notice": "Atualização do Converte Fácil disponível",
-    "author": "Ingo Stramm",
-    "author_homepage": "https://agencialaf.com",
-    "sections": {
-        "description": "Este plugin é parte integrante do ConverteFácil.",
-        "installation": "A instalação deste plugin deve ser feita pelo Converte Fácil."
-    },
-    "icons": {
-        "1x": "https://github.com/IngoStramm/micro-office-child/raw/master/assets/images/plugin-banner-128x128.jpg",
-        "2x": "https://github.com/IngoStramm/micro-office-child/raw/master/assets/images/plugin-banner-256x256.jpg"
-    },
-    "banners": {
-        "low": "https://github.com/IngoStramm/micro-office-child/raw/master/assets/images/plugin-banner-772x250.jpg",
-        "high": "https://github.com/IngoStramm/micro-office-child/raw/master/assets/images/plugin-banner-1544x500.jpg"
-    }
+    "details_url": "https://github.com/IngoStramm/micro-office-child/raw/main/dist/micro-office-child.zip",
+    "download_url": "https://github.com/IngoStramm/micro-office-child/raw/main/dist/micro-office-child.zip"
 }
