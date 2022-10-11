@@ -1,0 +1,28 @@
+.moc-welcome-banner {
+	position: relative;
+	.moc-welcome-banner-img {
+		position: relative;
+		z-index: 1;
+	}
+	.moc-welcome-banner-txt {
+		position: absolute;
+		top: 50%;
+		left: 80px;
+		@include translate( 0, -50% );
+		z-index: 9;
+		color: $branco;
+		h1,
+		h2,
+		h3 {
+			font-weight: 600;
+		}
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			margin: 0;
+		}
+	}
+}

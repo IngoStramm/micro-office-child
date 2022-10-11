@@ -1,0 +1,12 @@
+html {
+	&.scheme_original {
+		body {
+		 	&:not(.video_bg_show) {
+				background-color: $branco !important;
+				.page_wrap {
+					background-color: $branco !important;
+				}
+			}
+		}
+	}
+}

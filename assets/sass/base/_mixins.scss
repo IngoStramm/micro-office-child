@@ -1,0 +1,144 @@
+/* Background Image */
+@mixin bg-img($f, $r: repeat, $p-v: center, $p-h: center, $c: transparent ) {
+	background: $c url(#{$img-dir}#{$f}) $p-v $p-h $r;
+}
+
+/* background-size */
+@mixin bg-size($a) {
+	-webkit-background-size: #{$a};
+	background-size: #{$a};
+}
+
+/* generic transition */
+@mixin transition($transition) {
+	-webkit-transition: $transition;
+	-moz-transition: $transition;
+	-o-transition: $transition;
+	transition: $transition;
+}
+
+/* generic transition !important */
+@mixin transition-i($transition) {
+	-webkit-transition: $transition !important;
+	-moz-transition: $transition !important;
+	-o-transition: $transition !important;
+	transition: $transition !important;
+}
+
+/* all */
+@mixin trans-all($duration) {
+	@include transition(all #{$duration}s)
+}
+
+/* background-color */
+@mixin trans-bgc($duration) {
+	@include transition(background-color #{$duration}s)
+}
+
+/* opacity */
+@mixin trans-opc($duration) {
+	@include transition(opacity #{$duration}s)
+}
+
+/* scale */
+@mixin trans-scale($duration) {
+	@include transition(scale #{$duration}s)
+}
+
+/* scale */
+@mixin trans-margin($duration) {
+	@include transition(margin #{$duration}s)
+}
+
+/* generic transform */
+@mixin transform($transforms) {
+	   -moz-transform: $transforms;
+	     -o-transform: $transforms;
+	    -ms-transform: $transforms;
+	-webkit-transform: $transforms;
+          transform: $transforms;
+}
+/* rotate */
+@mixin rotate ($deg) {
+	@include transform(rotate(#{$deg}deg));
+}
+ 
+/* scale */
+@mixin scale($scale) {
+	@include transform(scale(#{$scale}));
+} 
+
+/* skew */
+@mixin skew($x, $y) {
+	@include transform(skew(#{$x}, #{$y}));
+} 
+
+/* translate */
+@mixin translate($x, $y) {
+	@include transform(translate(#{$x}, #{$y}));
+} 
+
+/* Border-radius */
+@mixin radius($a,$b: '',$c: '',$d: '') {
+	-webkit-border-radius: #{$a} #{$b} #{$c} #{$d};
+	-moz-border-radius: #{$a} #{$b} #{$c} #{$d};
+	border-radius: #{$a} #{$b} #{$c} #{$d};
+}
+
+/* Opacity */
+@mixin opacity($a) {
+	opacity: #{$a}; /* standard: ff gt 1.5, opera, safari */
+	-ms-filter: “alpha(opacity=#{$a})”; /* ie 8 */
+	filter: alpha(opacity=#{$a}); /* ie lt 7 */
+	-khtml-opacity: #{$a}; /* safari 1.x */
+	-moz-opacity: #{$a}; /* ff lt 1.5, netscape */
+}
+
+/* Opacity !important */
+@mixin opacity-i($a) {
+	opacity: #{$a} !important; /* standard: ff gt 1.5, opera, safari */
+	-ms-filter: “alpha(opacity=#{$a})” !important; /* ie 8 */
+	filter: alpha(opacity=#{$a}) !important; /* ie lt 7 */
+	-khtml-opacity: #{$a} !important; /* safari 1.x */
+	-moz-opacity: #{$a} !important; /* ff lt 1.5, netscape */
+}
+
+/* Hightlight */
+@mixin hightlight($a: $primary, $b: #fff) {
+	background: $a;
+	color: $b;
+}
+
+/* box-sizing */
+@mixin box-sz($b) {
+	-webkit-box-sizing: #{$b};
+	-moz-box-sizing: #{$b};
+	box-sizing: #{$b};
+}
+
+/* box-shadow */
+@mixin box-shadow($h, $v, $blur, $spread, $color) {
+	-webkit-box-shadow: #{$h} #{$v} #{$blur} #{$spread} #{$color};
+	-moz-box-shadow: #{$h} #{$v} #{$blur} #{$spread} #{$color};
+	box-shadow: #{$h} #{$v} #{$blur} #{$spread} #{$color};
+}
+
+@mixin bgc-hover($baseColor) {
+	background-color: $baseColor;
+	&:active,
+	&:focus,
+	&:hover,
+	&:focus:hover {
+		background-color: darken($baseColor, 5%);
+	}
+}
+
+@mixin c-hover($baseColor) {
+	color: $baseColor;
+	&:active,
+	&:focus,
+	&:hover,
+	&:focus:hover {
+		color: darken($baseColor, 5%);
+	}
+}

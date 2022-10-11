@@ -1,0 +1,34 @@
+.top_panel_wrap {
+	margin-bottom: 0 !important;
+	background-color: $azul-1 !important;
+	color: $branco !important;
+	.logo {
+		margin-top: 1em !important;
+		margin-bottom: 1em !important;
+		text-align: left;
+		img,
+		.logo_slogan {
+			display: inline-block;
+			vertical-align: bottom;
+			float: none;
+			clear: both;
+			font-style: normal;
+		}
+		br {
+			display: none;
+		}
+		.logo_fixed {
+			display: none;
+		}
+		.logo_main {
+			max-width: 60px;
+			margin-right: 90px;
+		}
+		.logo_slogan {
+			color: $branco !important;
+		}
+	}
+	.sidebar_wrap {
+		display: none;
+	}
+}

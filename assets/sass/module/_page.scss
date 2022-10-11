@@ -1,0 +1,12 @@
+.page {
+	&.home {
+		.post_title {
+			&.entry-title {
+				display: none;
+			}
+		}
+		.post_info {
+			display: none;
+		}
+	}
+}

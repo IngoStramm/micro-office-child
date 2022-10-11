@@ -1,0 +1,23 @@
+body {
+	&.scheme_original {
+		 &:not(.video_bg_show) {
+			background-color: $branco !important;
+		}
+	}
+	&:before {
+		content: '';
+		display: block;
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		width: 120px;
+		background-color: $cinza-5;
+	}
+	&.tablet,
+	&.mobile {
+		&:before {
+			display: none;
+		}
+	}
+}
